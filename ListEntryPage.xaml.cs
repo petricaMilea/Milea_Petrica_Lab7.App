@@ -17,7 +17,7 @@ public partial class ListEntryPage : ContentPage
 
 	async void OnShopListAddedClicked(object sender, EventArgs e)
 	{
-		await Navigation.PushAsync(new ListEntryPage
+		await Navigation.PushAsync(new ListPage
 		{
 			BindingContext = new ShopList()
 		});
@@ -27,7 +27,7 @@ public partial class ListEntryPage : ContentPage
     {
         if (e.SelectedItem != null) 
 		{ 
-			await Navigation.PushAsync(new ListEntryPage 
+			await Navigation.PushAsync(new ListPage 
 			{ 
 				BindingContext = e.SelectedItem as ShopList }); }
     }
