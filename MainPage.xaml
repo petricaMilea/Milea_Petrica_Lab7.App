@@ -24,7 +24,7 @@
             <Label
                 Text="From shelf to your tabel with our app"
                 SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="from Michael Pollan's Seven Words and Seven Rules for Eating"
+                SemanticProperties.Description="From shelf to your tabel with our app"
                 FontSize="18"
                 HorizontalOptions="Center" />
 
