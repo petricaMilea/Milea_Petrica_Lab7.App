@@ -10,21 +10,21 @@
             VerticalOptions="Center">
 
             <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
+                Source="main_page.jpg"
+                SemanticProperties.Description="Eat food, not too much, mostly plants"
+                HeightRequest="400"
                 HorizontalOptions="Center" />
 
             <Label
-                Text="Hello, World!"
+                Text="Eat healty food"
                 SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
+                FontSize="24"
                 HorizontalOptions="Center" />
 
             <Label
-                Text="Welcome to .NET Multi-platform App UI"
+                Text="From shelf to your tabel with our app"
                 SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                SemanticProperties.Description="from Michael Pollan's Seven Words and Seven Rules for Eating"
                 FontSize="18"
                 HorizontalOptions="Center" />
 
