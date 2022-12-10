@@ -37,7 +37,7 @@ namespace Milea_Petrica_Lab7.Data
             }
             else
             {
-                return _database.UpdateAsync(slist);
+                return _database.InsertAsync(slist);
             }
         }
 
