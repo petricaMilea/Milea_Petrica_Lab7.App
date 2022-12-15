@@ -9,7 +9,9 @@
                 Text="{Binding Description}"
                 HeightRequest="50">
                 <Editor.Behaviors>
-                    <local:ValidationBehavior />
+                    
+                    <local:ValidationBehaviour />
+                    
                 </Editor.Behaviors>
             </Editor>
 

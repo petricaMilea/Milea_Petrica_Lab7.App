@@ -7,7 +7,7 @@ using Milea_Petrica_Lab7;
 
 namespace Milea_Petrica_Lab7
 {
-    class ValidationBehaviour : Behavior<Editor>
+    public class ValidationBehaviour : Behavior<Editor>
     {
         protected override void OnAttachedTo(Editor entry) 
         { 
