@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Milea_Petrica_Lab7;
 
 namespace Milea_Petrica_Lab7
 {
