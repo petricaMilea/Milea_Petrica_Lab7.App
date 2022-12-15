@@ -23,7 +23,7 @@
 
                 <Button Text="Save Product"
                         MaximumWidthRequest="200"
-                        Clicked="OnSavedButtonClicked" />
+                        Clicked="OnSaveButtonClicked" />
 
                 <Button Grid.Column="1"
                         Text="Delete Product"
