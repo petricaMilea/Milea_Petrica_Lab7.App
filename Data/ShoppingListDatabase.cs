@@ -69,5 +69,24 @@ namespace Milea_Petrica_Lab7.Data
         {
             return _database.Table<Product>().ToListAsync();
         }
+
+        public Task<int> SaveListProductAsync(ListProduct listp) 
+        { 
+            if (listp.Id != 0) 
+            { 
+                return _database.UpdateAsync(listp); 
+            } 
+            else 
+            { 
+                return _database.InsertAsync(listp); 
+            } 
+        }
+        public Task<List<Product>> GetListProductsAsync(int shoplistid) 
+        { 
+            return _database.QueryAsync<Product>("select P.ID, P.Description from Product P" 
+                + " inner join ListProduct LP" 
+                + " on P.ID = LP.ProductID where LP.ShopListID = ?", 
+                shoplistid); 
+        }
     }
 }
