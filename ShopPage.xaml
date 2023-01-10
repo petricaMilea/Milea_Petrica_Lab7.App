@@ -31,6 +31,13 @@
                         Grid.Column="0" 
                         MaximumWidthRequest="200"
                         Clicked="OnSaveButtonClicked" />
+                
+                <Button Text="Show on Map" 
+                        Grid.Column="1" 
+                        MaximumWidthRequest="200" 
+                        Clicked="OnShowMapButtonClicked">
+                </Button>
+                
             </Grid>
         </StackLayout>
     </ContentPage.Content>
