@@ -20,13 +20,18 @@ public partial class ShopPage : ContentPage
     {
         var shop = (Shop)BindingContext; 
         var address = shop.Adress; 
-        var locations = await Geocoding.GetLocationsAsync(address);
+        //var locations = await Geocoding.GetLocationsAsync(address);
 
         var options = new MapLaunchOptions { Name = "Magazinul meu preferat" };
-        var location = locations?.FirstOrDefault();
+        // var location = locations?.FirstOrDefault();
 
         // var myLocation = await Geolocation.GetLocationAsync();
-        // var myLocation = new Location(46.7731796289, 23.6213886738);
-        await Map.OpenAsync(location, options);
+        var myLocation = new Location(46.7731796289, 23.6213886738);
+        await Map.OpenAsync(myLocation, options);
+    }
+
+    async void OnBackButtonClicked(object sender, EventArgs e)
+    {
+        await Navigation.PopAsync();
     }
 }

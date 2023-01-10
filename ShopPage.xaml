@@ -25,6 +25,7 @@
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
                 
                 <Button Text="Save Shop" 
@@ -37,7 +38,13 @@
                         MaximumWidthRequest="200" 
                         Clicked="OnShowMapButtonClicked">
                 </Button>
-                
+
+                <Button Text="Go Back" 
+                        Grid.Column="2" 
+                        MaximumWidthRequest="200" 
+                        Clicked="OnBackButtonClicked">
+                </Button>
+
             </Grid>
         </StackLayout>
     </ContentPage.Content>
